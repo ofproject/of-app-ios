@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OFJoinPoolAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xI-1b-uBq">
+                    <rect key="frame" x="42.5" y="237.5" width="290" height="192"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请先加入矿池，共同协作挖矿" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etk-ju-DlQ">
+                            <rect key="frame" x="15" y="78.5" width="260" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.69809088909999994" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Za-iw-mGO">
+                            <rect key="frame" x="95" y="134" width="100" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="4Za-iw-mGO" secondAttribute="height" multiplier="20:7" id="OuL-vN-BlT"/>
+                            </constraints>
+                            <state key="normal" title="选择矿池">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全球共有xxx个超级矿池" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttk-Ta-Oew">
+                            <rect key="frame" x="70" y="34.5" width="151" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.698090889084507" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="etk-ju-DlQ" secondAttribute="trailing" constant="15" id="5qr-Cn-fUP"/>
+                        <constraint firstItem="ttk-Ta-Oew" firstAttribute="centerX" secondItem="8xI-1b-uBq" secondAttribute="centerX" id="86e-yi-mDE"/>
+                        <constraint firstAttribute="bottom" secondItem="4Za-iw-mGO" secondAttribute="bottom" constant="23" id="CCJ-Ft-8yw"/>
+                        <constraint firstItem="etk-ju-DlQ" firstAttribute="centerY" secondItem="8xI-1b-uBq" secondAttribute="centerY" multiplier="0.9" id="CYj-fc-KH2"/>
+                        <constraint firstItem="ttk-Ta-Oew" firstAttribute="centerY" secondItem="8xI-1b-uBq" secondAttribute="centerY" multiplier="0.45" id="HJW-iq-anA"/>
+                        <constraint firstItem="4Za-iw-mGO" firstAttribute="centerX" secondItem="8xI-1b-uBq" secondAttribute="centerX" id="Ter-0q-uct"/>
+                        <constraint firstItem="etk-ju-DlQ" firstAttribute="leading" secondItem="8xI-1b-uBq" secondAttribute="leading" constant="15" id="Zkf-JU-ipH"/>
+                        <constraint firstAttribute="width" secondItem="8xI-1b-uBq" secondAttribute="height" multiplier="145:96" id="qDG-eq-IeX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8xI-1b-uBq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Mp6-5c-dBC"/>
+                <constraint firstItem="8xI-1b-uBq" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="290:375" id="i03-2T-Kxj"/>
+                <constraint firstItem="4Za-iw-mGO" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="100:375" id="xeS-Gj-sPe"/>
+                <constraint firstItem="8xI-1b-uBq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xwq-da-Uep"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="alertView" destination="8xI-1b-uBq" id="H8D-qu-2pp"/>
+                <outlet property="btn" destination="4Za-iw-mGO" id="WrF-4p-HmM"/>
+                <outlet property="contentLabel" destination="etk-ju-DlQ" id="5xD-pq-jai"/>
+                <outlet property="titleLabel" destination="ttk-Ta-Oew" id="rgt-Ox-aak"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OFPrifitHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6D-30-Bmq">
+                    <rect key="frame" x="0.0" y="5" width="375" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAh-kc-M0s">
+                            <rect key="frame" x="0.0" y="0.0" width="186" height="60"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wakuang_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ztx-HU-fHL">
+                                    <rect key="frame" x="31" y="14" width="33" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="33" id="Kaf-XS-yXG"/>
+                                        <constraint firstAttribute="width" constant="33" id="VnI-wp-yLC"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="领取矿池收益" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xif-Sv-D6M">
+                                    <rect key="frame" x="79" y="14" width="80" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mg-ag-fH9">
+                                    <rect key="frame" x="159.5" y="0.0" width="26.5" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 OF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc7-2m-Ney">
+                                    <rect key="frame" x="79" y="38.5" width="80.5" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="0.62352941179999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="Ztx-HU-fHL" firstAttribute="centerY" secondItem="YAh-kc-M0s" secondAttribute="centerY" id="8dn-jU-99U"/>
+                                <constraint firstItem="4Mg-ag-fH9" firstAttribute="leading" secondItem="xif-Sv-D6M" secondAttribute="trailing" id="PsG-pM-0T0"/>
+                                <constraint firstItem="hc7-2m-Ney" firstAttribute="leading" secondItem="xif-Sv-D6M" secondAttribute="leading" id="aAu-xD-YIa"/>
+                                <constraint firstAttribute="bottom" secondItem="4Mg-ag-fH9" secondAttribute="bottom" id="dFp-Nh-RXM"/>
+                                <constraint firstItem="hc7-2m-Ney" firstAttribute="top" secondItem="xif-Sv-D6M" secondAttribute="bottom" constant="9" id="eyf-6P-RHH"/>
+                                <constraint firstItem="xif-Sv-D6M" firstAttribute="leading" secondItem="Ztx-HU-fHL" secondAttribute="trailing" constant="15" id="lfP-mU-zBP"/>
+                                <constraint firstItem="xif-Sv-D6M" firstAttribute="top" secondItem="Ztx-HU-fHL" secondAttribute="top" id="nUg-0g-uiT"/>
+                                <constraint firstItem="4Mg-ag-fH9" firstAttribute="leading" secondItem="hc7-2m-Ney" secondAttribute="trailing" id="wzQ-TR-t9G"/>
+                                <constraint firstItem="4Mg-ag-fH9" firstAttribute="top" secondItem="YAh-kc-M0s" secondAttribute="top" id="x4x-FS-Wav"/>
+                                <constraint firstAttribute="trailing" secondItem="4Mg-ag-fH9" secondAttribute="trailing" id="xsi-1n-ITp"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="9zg-pR-n0c" appends="YES" id="lnD-Nt-DDi"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGW-iZ-BxZ">
+                            <rect key="frame" x="186" y="7.5" width="1" height="45"/>
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="mrI-Wj-VCL"/>
+                                <constraint firstAttribute="height" constant="45" id="o6H-4S-0EV"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Uh-Mw-bXv">
+                            <rect key="frame" x="187" y="0.0" width="188" height="60"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tangguo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="stF-Er-NyG">
+                                    <rect key="frame" x="26" y="14" width="33" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="33" id="55p-rj-dPM"/>
+                                        <constraint firstAttribute="height" constant="33" id="6pV-uK-J3J"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="领取糖果收益" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hl3-Jw-IuP">
+                                    <rect key="frame" x="74" y="14" width="80" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 OF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku7-cV-faK">
+                                    <rect key="frame" x="74" y="39" width="100" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="0.62352941179999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iC7-KA-xfu">
+                                    <rect key="frame" x="0.0" y="0.0" width="26" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Ku7-cV-faK" secondAttribute="trailing" constant="14" id="8uo-TR-mjm"/>
+                                <constraint firstItem="iC7-KA-xfu" firstAttribute="leading" secondItem="9Uh-Mw-bXv" secondAttribute="leading" id="JwG-G7-3jI"/>
+                                <constraint firstItem="stF-Er-NyG" firstAttribute="leading" secondItem="iC7-KA-xfu" secondAttribute="trailing" id="bmZ-GV-KxT"/>
+                                <constraint firstItem="Hl3-Jw-IuP" firstAttribute="leading" secondItem="stF-Er-NyG" secondAttribute="trailing" constant="15" id="dqD-42-jxk"/>
+                                <constraint firstItem="Hl3-Jw-IuP" firstAttribute="top" secondItem="stF-Er-NyG" secondAttribute="top" id="e9g-NT-CdA"/>
+                                <constraint firstItem="Ku7-cV-faK" firstAttribute="top" secondItem="Hl3-Jw-IuP" secondAttribute="bottom" constant="9" id="hPR-PO-SdU"/>
+                                <constraint firstAttribute="bottom" secondItem="iC7-KA-xfu" secondAttribute="bottom" id="kDz-m5-p8w"/>
+                                <constraint firstItem="Ku7-cV-faK" firstAttribute="leading" secondItem="Hl3-Jw-IuP" secondAttribute="leading" id="quB-5F-czZ"/>
+                                <constraint firstItem="iC7-KA-xfu" firstAttribute="top" secondItem="9Uh-Mw-bXv" secondAttribute="top" id="xgV-lo-vIb"/>
+                                <constraint firstItem="stF-Er-NyG" firstAttribute="centerY" secondItem="9Uh-Mw-bXv" secondAttribute="centerY" id="zBf-Xl-qjw"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="OQs-Zh-tPJ" appends="YES" id="jcl-Qg-z3e"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="YAh-kc-M0s" secondAttribute="bottom" id="1MH-3r-tsy"/>
+                        <constraint firstItem="YAh-kc-M0s" firstAttribute="top" secondItem="Y6D-30-Bmq" secondAttribute="top" id="8rC-Oi-3mq"/>
+                        <constraint firstItem="YAh-kc-M0s" firstAttribute="width" secondItem="Y6D-30-Bmq" secondAttribute="width" multiplier="0.498" id="EQp-lj-hKt"/>
+                        <constraint firstItem="tGW-iZ-BxZ" firstAttribute="leading" secondItem="YAh-kc-M0s" secondAttribute="trailing" id="Fho-Ll-Ol5"/>
+                        <constraint firstItem="YAh-kc-M0s" firstAttribute="leading" secondItem="Y6D-30-Bmq" secondAttribute="leading" id="Ixa-mj-RxH"/>
+                        <constraint firstItem="iC7-KA-xfu" firstAttribute="width" secondItem="Y6D-30-Bmq" secondAttribute="width" multiplier="26:375" id="XAx-zP-Q6v"/>
+                        <constraint firstAttribute="trailing" secondItem="9Uh-Mw-bXv" secondAttribute="trailing" id="dR9-h1-Ytl"/>
+                        <constraint firstItem="tGW-iZ-BxZ" firstAttribute="centerY" secondItem="YAh-kc-M0s" secondAttribute="centerY" id="eVU-d7-JL3"/>
+                        <constraint firstAttribute="bottom" secondItem="9Uh-Mw-bXv" secondAttribute="bottom" id="hgm-Hg-Wvl"/>
+                        <constraint firstItem="9Uh-Mw-bXv" firstAttribute="leading" secondItem="tGW-iZ-BxZ" secondAttribute="trailing" id="iWK-xH-NBP"/>
+                        <constraint firstItem="4Mg-ag-fH9" firstAttribute="width" secondItem="Y6D-30-Bmq" secondAttribute="width" multiplier="26:375" id="tSX-Nw-yiK"/>
+                        <constraint firstItem="9Uh-Mw-bXv" firstAttribute="top" secondItem="Y6D-30-Bmq" secondAttribute="top" id="yaW-wY-meJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Y6D-30-Bmq" secondAttribute="bottom" constant="10" id="Oue-kB-HjL"/>
+                <constraint firstItem="Y6D-30-Bmq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="QMK-z5-y2p"/>
+                <constraint firstAttribute="bottom" secondItem="Y6D-30-Bmq" secondAttribute="bottom" constant="10" id="Rvf-yc-1MO"/>
+                <constraint firstItem="Y6D-30-Bmq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="clT-gq-sfy"/>
+                <constraint firstAttribute="trailing" secondItem="Y6D-30-Bmq" secondAttribute="trailing" id="pk5-gG-BIK"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tangguoLabel" destination="Ku7-cV-faK" id="Trr-gI-POd"/>
+                <outlet property="wakuangLabel" destination="hc7-2m-Ney" id="LZf-4Z-QA0"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="-240.5"/>
+        </view>
+        <tapGestureRecognizer id="9zg-pR-n0c">
+            <connections>
+                <action selector="getKuangchiProfit:" destination="iN0-l3-epB" id="cra-eD-URt"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="OQs-Zh-tPJ">
+            <connections>
+                <action selector="getTangguoProfit:" destination="iN0-l3-epB" id="ugE-Ae-Ddc"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="tangguo_icon" width="33" height="33"/>
+        <image name="wakuang_icon" width="33" height="33"/>
+    </resources>
+</document>

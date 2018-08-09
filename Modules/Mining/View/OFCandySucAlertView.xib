@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OFCandySucAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candyAlert_Lint" translatesAutoresizingMaskIntoConstraints="NO" id="gwS-ak-V7w">
+                    <rect key="frame" x="206" y="-59" width="2" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1.5" id="CZt-av-EP4"/>
+                        <constraint firstAttribute="height" constant="300" id="dwD-sL-jNm"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9q-xE-i3e">
+                    <rect key="frame" x="36" y="160.99999999999997" width="342" height="340.33333333333326"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candyAlert_bg" translatesAutoresizingMaskIntoConstraints="NO" id="GhO-Lu-a9r">
+                            <rect key="frame" x="0.0" y="0.0" width="342" height="340.33333333333331"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="领取奖励" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e23-GM-fCn">
+                            <rect key="frame" x="132" y="135" width="78" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您获得88个糖果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVw-No-4he">
+                            <rect key="frame" x="87" y="201.66666666666669" width="169" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="1" green="0.32156862745098036" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGB-KT-22u">
+                            <rect key="frame" x="69" y="264.33333333333331" width="204" height="49.666666666666686"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="iGB-KT-22u" secondAttribute="height" multiplier="185:45" id="oGp-5S-4w2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="邀请好友得更多糖果" backgroundImage="candyAlert_btn_bg">
+                                <color key="titleColor" red="1" green="0.32156862749999998" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="inviteBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="okg-jN-fDx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65O-F8-DG1">
+                            <rect key="frame" x="292" y="136.66666666666669" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="9zy-0J-9oj"/>
+                                <constraint firstAttribute="width" constant="20" id="aLr-dZ-ek6"/>
+                            </constraints>
+                            <state key="normal" image="inviteAlert_close_icon"/>
+                            <connections>
+                                <action selector="closeBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="IYj-wL-N11"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="e23-GM-fCn" firstAttribute="centerX" secondItem="N9q-xE-i3e" secondAttribute="centerX" id="1Cu-dh-p8Y"/>
+                        <constraint firstAttribute="trailing" secondItem="GhO-Lu-a9r" secondAttribute="trailing" id="3qX-xM-AHZ"/>
+                        <constraint firstItem="GhO-Lu-a9r" firstAttribute="top" secondItem="N9q-xE-i3e" secondAttribute="top" id="4qI-zx-Obp"/>
+                        <constraint firstItem="iGB-KT-22u" firstAttribute="centerX" secondItem="e23-GM-fCn" secondAttribute="centerX" id="Jkm-ag-ai1"/>
+                        <constraint firstAttribute="bottom" secondItem="GhO-Lu-a9r" secondAttribute="bottom" id="L9b-zT-yo1"/>
+                        <constraint firstItem="GhO-Lu-a9r" firstAttribute="leading" secondItem="N9q-xE-i3e" secondAttribute="leading" id="QZp-QX-jhI"/>
+                        <constraint firstItem="65O-F8-DG1" firstAttribute="centerY" secondItem="e23-GM-fCn" secondAttribute="centerY" id="QnG-6n-IbU"/>
+                        <constraint firstAttribute="trailing" secondItem="65O-F8-DG1" secondAttribute="trailing" constant="30" id="SSs-X9-YzZ"/>
+                        <constraint firstItem="iGB-KT-22u" firstAttribute="centerY" secondItem="N9q-xE-i3e" secondAttribute="centerY" multiplier="1.7" id="Xhv-vt-zNx"/>
+                        <constraint firstItem="mVw-No-4he" firstAttribute="centerY" secondItem="N9q-xE-i3e" secondAttribute="centerY" multiplier="1.25" id="dcz-u9-hRd"/>
+                        <constraint firstItem="e23-GM-fCn" firstAttribute="centerY" secondItem="N9q-xE-i3e" secondAttribute="centerY" multiplier="0.86" id="enI-SK-Oqc"/>
+                        <constraint firstItem="mVw-No-4he" firstAttribute="centerX" secondItem="e23-GM-fCn" secondAttribute="centerX" id="fqo-2r-Fdc"/>
+                        <constraint firstAttribute="width" secondItem="N9q-xE-i3e" secondAttribute="height" multiplier="155:154" id="gik-14-7mV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iGB-KT-22u" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="185:375" id="Fri-rV-9fs"/>
+                <constraint firstItem="N9q-xE-i3e" firstAttribute="top" secondItem="gwS-ak-V7w" secondAttribute="bottom" constant="-80" id="Tne-NF-GPA"/>
+                <constraint firstItem="gwS-ak-V7w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aGo-7P-xKq"/>
+                <constraint firstItem="N9q-xE-i3e" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.9" id="dym-a6-pb3"/>
+                <constraint firstItem="N9q-xE-i3e" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="310:375" id="v6X-sF-h7Y"/>
+                <constraint firstItem="N9q-xE-i3e" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ytS-YM-zQG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="alertView" destination="N9q-xE-i3e" id="yIz-M6-2NA"/>
+                <outlet property="alertViewCentery" destination="dym-a6-pb3" id="Hdi-i4-sbM"/>
+                <outlet property="contentLabel" destination="mVw-No-4he" id="mvc-p4-nfL"/>
+                <outlet property="inviteBtn" destination="iGB-KT-22u" id="RCZ-2x-kgw"/>
+                <outlet property="lineImgView" destination="gwS-ak-V7w" id="oL8-MT-JpP"/>
+                <outlet property="titleLabel" destination="e23-GM-fCn" id="fAk-Ec-uSj"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="candyAlert_Lint" width="1" height="350"/>
+        <image name="candyAlert_bg" width="309" height="308"/>
+        <image name="candyAlert_btn_bg" width="185" height="45"/>
+        <image name="inviteAlert_close_icon" width="12" height="12"/>
+    </resources>
+</document>
